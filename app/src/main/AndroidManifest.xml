@@ -8,6 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".widget.App"
         android:theme="@style/Theme.SingIt">
         <activity android:name=".view.activity.MainActivity">
             <intent-filter>
