@@ -81,14 +81,13 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
             android:background="#ffffff"
             android:orientation="horizontal"
-            android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
@@ -112,9 +111,9 @@
 
                 <SeekBar
                     android:id="@+id/seekBar"
+                    style="@style/MySeekBar"
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    style="@style/MySeekBar"/>
+                    android:layout_height="20dp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -128,10 +127,10 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:text="0:00"
+                        android:textColor="#131433"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:textColor="#131433"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
                     <TextView
@@ -141,10 +140,10 @@
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
                         android:text="0:00"
+                        android:textColor="#d8d8d8"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:textColor="#d8d8d8"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -163,6 +162,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -172,42 +172,41 @@
                 android:id="@+id/imageView14"
                 android:layout_width="63dp"
                 android:layout_height="83dp"
-                app:srcCompat="@drawable/playlist"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp"
+                app:srcCompat="@drawable/playlist" />
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="58dp"
                 android:layout_height="58dp"
-                app:srcCompat="@drawable/back"
+                android:layout_marginStart="18dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="18dp"/>
+                app:srcCompat="@drawable/back" />
 
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
-                app:srcCompat="@drawable/play"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="15dp"/>
+                app:srcCompat="@drawable/play" />
+
             <ImageView
                 android:id="@+id/imageView17"
                 android:layout_width="58dp"
                 android:layout_height="58dp"
-                app:srcCompat="@drawable/front"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/front" />
 
             <ImageView
                 android:id="@+id/imageView18"
                 android:layout_width="63dp"
                 android:layout_height="83dp"
-                app:srcCompat="@drawable/unlike"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="36dp"
-                android:padding="10dp"/>
-
-
+                android:padding="10dp"
+                app:srcCompat="@drawable/unlike" />
 
 
         </LinearLayout>
