@@ -2,10 +2,7 @@ package org.software.meister.gsm.singit.di
 
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
-import org.software.meister.gsm.singit.viewmodel.activity.LoginViewModel
-import org.software.meister.gsm.singit.viewmodel.activity.MainViewModel
-import org.software.meister.gsm.singit.viewmodel.activity.PlayListViewModel
-import org.software.meister.gsm.singit.viewmodel.activity.SongPlayViewModel
+import org.software.meister.gsm.singit.viewmodel.activity.*
 import org.software.meister.gsm.singit.viewmodel.dialog.EmailCheckViewModel
 import org.software.meister.gsm.singit.viewmodel.fragment.MainFragmentViewModel
 import org.software.meister.gsm.singit.viewmodel.fragment.MainMenuViewModel
@@ -20,4 +17,5 @@ val viewModelModules = module{
     viewModel { SongPlayViewModel() }
     viewModel { MainMenuViewModel() }
     viewModel { PlayListViewModel() }
+    viewModel { ChangePasswordViewModel() }
 }
